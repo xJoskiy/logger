@@ -3,7 +3,7 @@
 #include <chrono>
 #include <memory>
 
-#include "metric/metric.h"
+#include "metric/metric.hpp"
 
 struct Request {
     using time_stamp = std::chrono::system_clock::time_point;

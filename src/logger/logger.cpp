@@ -1,4 +1,4 @@
-#include "logger.h"
+#include "logger.hpp"
 
 #include <condition_variable>
 #include <fstream>
@@ -7,8 +7,8 @@
 #include <queue>
 #include <thread>
 
-#include "metric/metric.h"
-#include "request.h"
+#include "metric/metric.hpp"
+#include "metric/request.hpp"
 
 Logger::Logger(std::string output_file) : file_(output_file, std::ios_base::app) {
     auto main_f = [this](std::stop_token stop_token) {

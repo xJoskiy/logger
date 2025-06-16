@@ -6,8 +6,8 @@
 #include <queue>
 #include <thread>
 
-#include "metric/metric.h"
-#include "request.h"
+#include "metric/metric.hpp"
+#include "metric/request.hpp"
 
 class Logger {
     std::queue<Request> queue_;

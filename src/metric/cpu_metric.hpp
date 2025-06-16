@@ -2,7 +2,7 @@
 #include <sstream>
 #include <string>
 
-#include "metric.h"
+#include "metric/metric.hpp"
 
 struct CPUMetric : public Metric<double> {
     size_t precision_;

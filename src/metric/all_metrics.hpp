@@ -1,3 +1,3 @@
-#include "cpu_metric.h"
-#include "http_metric.h"
-#include "metric.h"
+#include "metric/cpu_metric.hpp"
+#include "metric/http_metric.hpp"
+#include "metric/metric.hpp"

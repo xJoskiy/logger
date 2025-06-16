@@ -4,8 +4,8 @@
 #include <thread>
 #include <vector>
 
-#include "logger.h"
-#include "metric/all_metrics.h"
+#include "logger/logger.hpp"
+#include "metric/all_metrics.hpp"
 
 void worker(Logger& logger) {
     std::random_device rd;
@@ -17,7 +17,6 @@ void worker(Logger& logger) {
         auto cpu = std::make_shared<CPUMetric>("CPU", dist(mt), 8);
 
         logger.log({cpu, http});
-        // std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
 }
 
